@@ -1,2 +1,2 @@
-# homework1
-homework1
+# responsive-portfolio
+UW Coding Bootcamp - Homework 2.2
