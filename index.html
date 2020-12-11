@@ -1,22 +1,70 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
-    <title>Password Generator</title>
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" />
-  </head>
-  <body>
-    <h1>Random Password Generator</h1>
-        <div id="quoteDisplay">
-            
-        </div>
-    <button id = "check" onclick = "amountPrompt()">Click Here</button>
-    <div id="test" class="message"> 
-    <h1 id="length"></h1>
-    </div>
-    <h2></h2>
-    </div>
-    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <h1>Password Generator</h1>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+        <div class="megaContainer">
+    <header>
+        
+        <h1>Password Generator</h1>
+
+    </header>
+
+    
+
+    <a class="container">
+
+        <a class="row">
+
+                <a class="col-md-2">
+
+                </a>
+
+                <a class="col-md-8">
+
+                    <a class="content">
+                        
+                        <h2>Generate a Password</h2>
+
+                        <br>
+
+                        <span id='password'>Your Password</span>
+
+                        <br>
+
+                        <input type="number" id="passl" min='8' max='128'>Password Length <br>
+
+                        <input type="checkbox" id="uppercase">Include Uppercase<br>
+
+                        <input type="checkbox" id="lowercase">Include Lowercase<br>
+
+                        <input type="checkbox" id="number">Include Numbers<br>
+
+                        <input type="checkbox" id="symbol">Include Symbols<br>
+
+                        <button type="button" class="btn btn-danger" id="generate">Generate</button>
+
+                        <button type="button" class="btn btn-info" id="copyClip">Copy to Clipboard</button>
+
+                    </a>
+
+                </a>
+
+                <a class="col-md-2">
+
+                </a>
+                <script src="script.js">
+                  
+                </script>
 </body>
 
 </html>
