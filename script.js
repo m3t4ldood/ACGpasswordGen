@@ -1,3 +1,42 @@
+//Create a warning for if prompt about only inputing numbers
+
+ if (charLength === "" || charLength <= 7 || charLength >= 129) {
+     for (x = 0; x < 3; x++) {
+         alert("Please enter a vaild number that is between 8 and 128.");
+         var charLength = prompt("How many characters would you like your new password to be? Pick a number between 8 and 128.");
+     }
+ }
+
+
+
+//create if statments for which functions based on user inputs (true excute function, false skip)
+
+//Generate random symbol
+ if(genSymbols){
+         var newSymbol = (Math.floor(Math.random() * symbols.length));    
+     }else{ var newSymbol = null}
+
+ //Generate random number
+ if(genNumbers){
+         var newNumber = (Math.floor(Math.random() * numbers.length));    
+     }else{ var newNumber = null}
+     Generate random lowercase letter
+     if(genLowerCase){
+             var newLowerCase = (Math.floor(Math.random() * lowerCase.length));    
+ }else{ var newLowerCase = null}
+
+//Generate random uppercase letter
+ if(genUpperCase){
+     var newUpperCase = (Math.floor(Math.random() * upperCase.length));    
+ }else{var newUpperCase = null}
+ console.log(newSymbol, newNumber, newLowerCase, newUpperCase);
+//Set up arrays to hold all the random characters
+     function newPass() {
+         let symbols = "!'#$%&()*+-./;:<>=?@[]{}~^";
+         let numbers = "0123456789";
+     let lowerCase = "abcdefghijklmnopqrstuvwxyz";
+     let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 //create variables for all elements to be manipulated by javascript
 var passwordEl = document.querySelector("#password");
 var btngenerateEl = document.querySelector("#generate");
@@ -132,7 +171,13 @@ btngenerateEl.addEventListener("click", function () {
             }
         }
 
-        //Generate new password into text area
+     let password = "";
+     //create loop to run character generator 10 times
+     for (var i = 0; i < length; i++) {
+         var character = Math.floor(Math.random() * combind.length);
+         password += combind.(character, character + 1);
+     }
+     console.log(password)
         passwordEl.textContent = newPassword;
     }
 
@@ -144,48 +189,5 @@ btncopyEl.addEventListener("click", function () {
     document.execCommand("copy");
     alert("Copied your new password");
 }
-                           //Create a warning for if prompt about only inputing numbers
-
- if (charLength === "" || charLength <= 7 || charLength >= 129) {
-     for (x = 0; x < 3; x++) {
-         alert("Please enter a vaild number that is between 8 and 128.");
-         var charLength = prompt("How many characters would you like your new password to be? Pick a number between 8 and 128.");
-     }
- }
-//Generate random symbol
- if(genSymbols){
-         var newSymbol = (Math.floor(Math.random() * symbols.length));    
-     }else{ var newSymbol = null}
-
- //Generate random number
- if(genNumbers){
-         var newNumber = (Math.floor(Math.random() * numbers.length));    
-     }else{ var newNumber = null}
-     Generate random lowercase letter
-     if(genLowerCase){
-             var newLowerCase = (Math.floor(Math.random() * lowerCase.length));    
- }else{ var newLowerCase = null}
-
-//Generate random uppercase letter
- if(genUpperCase){
-     var newUpperCase = (Math.floor(Math.random() * upperCase.length));    
- }else{var newUpperCase = null}
- console.log(newSymbol, newNumber, newLowerCase, newUpperCase);
-//Set up arrays to hold all the random characters
-     function newPass() {
-         let symbols = "!'#$%&()*+-./;:<>=?@[]{}~^";
-         let numbers = "0123456789";
-     let lowerCase = "abcdefghijklmnopqrstuvwxyz";
-     let upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//combind all arrays to one variable(password)
-
-//create a password string that the computer can spit out
-     let password = "";
-     //create loop to run character generator 10 times
-     for (var i = 0; i < length; i++) {
-         var character = Math.floor(Math.random() * combind.length);
-         password += combind.(character, character + 1);
-     }
-     console.log(password);
 
 
