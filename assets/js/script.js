@@ -27,7 +27,6 @@ get.addEventListener("click", function () {
     ps = generatePassword();
     document.getElementById("password").placeholder = ps;
 });
-});
 
 // Start function to generate password
 function generatePassword() {
@@ -138,4 +137,4 @@ function copyPassword() {
     document.getElementById("password").select();
     document.execCommand("Copy");
     alert("Password copied to clipboard!");
-}
+});
