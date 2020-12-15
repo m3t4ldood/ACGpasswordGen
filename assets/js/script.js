@@ -1,7 +1,3 @@
-
-
-// Start working code
-// User input variables: 
 var enter;
 var confirmNumber;
 var confirmCharacter;
@@ -31,10 +27,6 @@ get.addEventListener("click", function () {
     ps = generatePassword();
     document.getElementById("password").placeholder = ps;
 });
-// ZAZZifyer
-    $(function(){
-$("input").click(function(){
-    $("body").css({background-image:"url('spdk.gif')"}); 
 });
 
 // Start function to generate password
