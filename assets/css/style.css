@@ -20,6 +20,7 @@ h2 {
 #password {
     display: block;
     margin: 0;
+    background-image: url("spdk.gif");
     border: dashed 3px #7777777e;
     border-radius: 5px;
     height: 100px;
