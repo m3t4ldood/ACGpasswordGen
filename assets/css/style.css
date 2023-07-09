@@ -4,9 +4,9 @@ h1 {
 }
 
 /* Section/content */
-section{
+section {
     border: solid 1px #cccccc;
-    background: #ffffff;
+    background: #4b4b4b;
     padding: 5%;
     width: 70%;
     margin: auto;
@@ -41,17 +41,19 @@ button {
 }
 
 function generatePassword() {
-    var length = 8,
-        charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
-        retVal = "";
-    for (var i = 0, n = charset.length; i < length; ++i) {
-        retVal += charset.charAt(Math.floor(Math.random() * n));
+    var length=8,
+    charset="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+    retVal="";
+
+    for (var i=0, n=charset.length; i < length; ++i) {
+        retVal+=charset.charAt(Math.floor(Math.random() * n));
     }
+
     return retVal;
 }
 
-@media screen and (max-width: 768px){
-    #generate{
+@media screen and (max-width: 768px) {
+    #generate {
         margin-bottom: 2px;
     }
 }
